@@ -24,3 +24,12 @@ def generate_alphanumeric_code(length=8):
 # Generate an alphanumeric code
 alphanumeric_code = generate_alphanumeric_code()
 print(alphanumeric_code)
+
+import random
+
+def generate_numeric_code(length=6):
+    return ''.join(random.choices(string.digits, k=length))
+
+# Generate a numeric code
+numeric_code = generate_numeric_code()
+print(numeric_code)
